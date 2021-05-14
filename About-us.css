@@ -251,7 +251,9 @@ footer {
   }
   h1.navbar-head-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    font-size: 40px;
+    left: 30%;
   }
   .navbar ul {
     display: none;
