@@ -244,7 +244,8 @@ footer {
   color: snow;
 }
 .last {
-  display: none;
+  position: relative;
+  right: -200px;
 }
 @media (max-width: 600px) {
   body,
