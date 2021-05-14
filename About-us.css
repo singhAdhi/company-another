@@ -15,17 +15,15 @@ body {
 
 header {
   width: 100vw;
-  margin-top: -20px;
   position: fixed;
   background: snow;
   z-index: 100;
   left: 0;
   right: 0;
-  padding: 0 80px;
+  padding: 0 60px;
 }
-
 section.container {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
 }
 nav.navbar {
@@ -39,10 +37,13 @@ nav.navbar {
   color: #7e4aa7;
   font-size: 16px;
 }
-a {
+a.link {
+  text-decoration: none;
+}
+a.btn {
   text-decoration: none;
   border: 1px solid;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   color: snow;
   background-color: #7e4aa7;
@@ -57,11 +58,12 @@ a:hover {
   color: #7e4aa7;
   font-weight: 600;
 }
+.navbar ul li:first-child {
+  padding-left: 0;
+}
 .navbar ul {
   display: flex;
-  padding: 50px;
-  position: relative;
-  left: 80px;
+  padding: 40px 0;
 }
 h1.navbar-head-text {
   font-size: 24px;
@@ -69,55 +71,44 @@ h1.navbar-head-text {
   line-height: 32px;
   letter-spacing: 2px !important;
 }
-.hero {
-  background-color: #26093e;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: relative;
-  color: snow;
-}
-.hero-right-image {
-  position: absolute;
-  top: 91px;
-  right: 50px;
-  width: 50vw;
-  height: 85vh;
-}
-.hero-img {
-  width: 15%;
-  position: absolute;
-  top: 150px;
-  left: 80px;
-}
 
-.hero-img-two {
-  width: 15%;
-  position: absolute;
-  bottom: 70px;
-  left: 25%;
+.hero {
+  display: flex;
+
+  align-items: center;
+
+  color: #7e4aa7;
+  background-color: #26093e;
 }
 .hero-left {
-  z-index: 2;
-  position: absolute;
-  top: 40%;
-  left: 5%;
+  width: 45%;
+  padding-left: 80px;
 }
-.hero-left h1 {
+
+h1.hero-left-text {
   font-size: 40px;
   line-height: 50px;
+  font-weight: 600;
 }
-.hero-left h4 {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
+h4.hero-left-small-text {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: goldenrod;
 }
-.hero-left-anchor {
-  position: relative;
-  top: 40px;
-  background-color: transparent;
-  border: 1px solid goldenrod;
+.hero-right {
+  width: 55%;
+}
+img.hero-right-image {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+}
+.hero-img {
+  width: 100px;
+}
+.hero-img-two {
+  width: 100px;
 }
 .part-two {
   width: 100vw;
