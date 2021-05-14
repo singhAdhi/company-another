@@ -6,11 +6,7 @@
   letter-spacing: 1.6px;
 }
 body {
-  overflow-x: hidden;
   width: 100vw;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 header {
@@ -241,11 +237,9 @@ footer {
 @media (max-width: 600px) {
   body,
   html {
-    overflow-x: hidden;
+    height: 100%;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    overflow-x: hidden;
   }
   body {
     position: relative;
@@ -253,7 +247,7 @@ footer {
   header {
     background-color: snow;
     height: 20vh;
-    width: 110vw;
+    width: 97%;
   }
   h1.navbar-head-text {
     position: absolute;
@@ -263,16 +257,14 @@ footer {
     display: none;
   }
   .hero {
-    position: relative;
     background-color: #26093e;
-    width: 110vw;
-    height: 160vh;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
   }
-  .hero-right-image {
-    width: 110vw;
-    height: 100vh;
-    position: relative;
-    left: -15px;
+  .hero-right {
+    width: 100%;
+    padding-top: 30px;
   }
   .hero-left-anchor {
     width: 200px;
@@ -282,16 +274,14 @@ footer {
     display: none;
   }
   .hero-left {
-    position: absolute;
-    top: 65%;
     text-align: center;
+    padding: 0 30px 40px 10px;
+    width: 100%;
   }
+
   .part-two {
-    text-align: center;
-    width: 110vw;
-    height: 100vh;
-    position: relative;
-    left: -25px;
+    height: 110vh;
+    padding: 20px;
   }
   .part-two h1 {
     font-size: 24px;
@@ -312,46 +302,42 @@ footer {
     font-weight: 500;
     width: 80%;
   }
-  .part-three {
-    width: 110vw;
-    height: 90vh;
-  }
 
   .part-three-main h1 {
     text-transform: uppercase;
-    padding: -40px;
+    padding: 10px;
   }
 
   .part-three-main h3 {
-    margin: 20px;
+    margin: 10px;
   }
   .part-three-main a {
-    width: 250px;
+    padding: 10px 15px;
     position: relative;
-    left: 25%;
+    left: 37%;
+  }
+  .part-three-main {
+    padding: 40px;
   }
   footer {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
   }
   footer .left {
     position: relative;
     left: 25%;
   }
   footer .right {
-    position: relative;
-    top: -40px;
-    left: 20px;
+    width: 100%;
+    margin: 0 -50px;
   }
   .one {
     padding-right: 40px;
     margin: 0;
   }
   .last {
-    text-align: center;
-    border-top: 1px solid goldenrod;
-    padding-top: 10px;
+    padding-top: 60px;
     color: goldenrod;
   }
 }
